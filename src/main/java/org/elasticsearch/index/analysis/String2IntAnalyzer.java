@@ -30,7 +30,7 @@ public final class String2IntAnalyzer extends Analyzer {
     private int redis_port;
     private boolean local_mem_cache = true;
     private boolean use_lru_cache = true;
-    private RedisHanlder handler;
+    //private RedisHanlder handler;
 
     public String2IntAnalyzer(Settings settings) {
         redis_server = settings.get("redis_server", "127.0.0.1");
@@ -45,7 +45,7 @@ public final class String2IntAnalyzer extends Analyzer {
             use_lru_cache = false;
         }
 
-        handler = RedisHanlder.getInstance(redis_server, redis_port, local_mem_cache,use_lru_cache);
+        //handler = RedisHanlder.getInstance(redis_server, redis_port, local_mem_cache,use_lru_cache);
     }
 
     @Override

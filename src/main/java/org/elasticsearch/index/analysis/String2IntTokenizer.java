@@ -62,7 +62,6 @@ public class String2IntTokenizer extends Tokenizer {
         termAtt.resizeBuffer(bufferSize);
     }
 
-
     @Override
     public final boolean incrementToken() throws IOException {
         if (!done) {
